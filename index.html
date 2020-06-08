@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prototype website</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header></header>
+    <!-- <nav>
+      <ul>
+        <li><a href="#">Dummy menu link one</a></li>
+        <li><a href="#">Dummy menu link two</a></li>
+        <li><a href="#">Dummy menu link three</a></li>
+        <li><a href="#">Dummy menu link four</a></li>
+      </ul>
+    </nav> -->
+    <main>
+      <section id="carousel-container" aria-roledescription="carousel" aria-label="Latest news,">
+        <span id="sr-only" aria-atomic="false" aria-live="polite"></span>
+
+        <button id="previous">Previous slide</button>
+        <button id="next">Next slide</button>
+
+  <ul id="slides-list" role="presentation">
+
+    <li class="current-slide" aria-hidden="false">
+
+      <article aria-roledescription="carousel slide" class="slide-container" aria-labelledby="slide-one sr-only">
+        <img src="https://picsum.photos/900/500" alt="">
+        <h2 id="slide-one">Flexible study to suit you</h2>
+        <p>With mid-year entry, you could start study in July - but time is running out to get your undergraduate application in.</p>
+        <a href="#" tabindex="0">Mid-year entry to QUT</a>
+
+      </article>
+
+    </li>
+
+        <li class="opaque" aria-hidden="true">
+
+      <article aria-roledescription="carousel slide" class="slide-container" aria-labelledby="slide-two sr-only">
+        <img src="https://picsum.photos/900/500" alt="">
+        <h2 id="slide-two">Last Days to Apply to QTAC</h2>
+        <p>With mid-year entry, you could start study in July - but time is running out to get your undergraduate application in.</p>
+        <a href="#" tabindex="-1">Mid-year entry to QUT</a>
+
+      </article>
+
+    </li>
+
+        <li class="opaque" aria-hidden="true">
+
+      <article aria-roledescription="carousel slide" class="slide-container" aria-labelledby="slide-three sr-only">
+        <img src="https://picsum.photos/900/500" alt="">
+        <h2 id="slide-three">Last Days to Apply to QTAC</h2>
+        <p>With mid-year entry, you could start study in July - but time is running out to get your undergraduate application in.</p>
+        <a href="#" tabindex="-1">Mid-year entry to QUT</a>
+
+      </article>
+
+    </li>
+
+  </ul>
+
+  <nav id="pagination-container" aria-hidden="true">
+    <!-- <button class="pagination current"></button>
+    <button class="pagination"></button>
+    <button class="pagination"></button> -->
+  </nav>
+
+</section>
+
+    </main>
+    <script src="/carousel.js" charset="utf-8"></script>
+  </body>
+</html>

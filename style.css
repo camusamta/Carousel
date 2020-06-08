@@ -1,0 +1,119 @@
+* {
+
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+
+}
+
+*:focus {
+
+  outline: 8px solid red;
+
+}
+
+body {
+
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+ul {
+  /*  new additions  */
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 100%;
+  transition: 0.300s ease-in;
+/*   overflow: hidden; */
+}
+
+#sr-only {
+
+  display: block;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+li {
+
+  list-style: none;
+/*  new additions  */
+  position: absolute;
+}
+
+a {
+
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+}
+
+button {
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+#carousel-container {
+
+  position: relative;
+  height: 655px;
+  width: 900px;
+
+}
+
+#next, #previous {
+
+  position: absolute;
+  top: 250px;
+  padding: 1rem;
+  width: 108px;
+}
+
+#previous {
+
+  left: -54px;
+
+}
+
+#next {
+
+  right: -54px;
+}
+
+.opaque {
+
+  opacity: 0.2;
+}
+
+nav {
+
+  /* position: absolute; */
+  /* background-color: rgba(255,255,255,0.5); */
+  /* right: 0; */
+  /* top: 464px; */
+  /* padding: 0.5rem; */
+}
+
+.pagination {
+
+  background-color: #343434;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  margin-left: 8px;
+}
+
+.current {
+
+  background-color: blue;
+}
